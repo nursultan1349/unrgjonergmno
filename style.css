@@ -1,0 +1,84 @@
+.main{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.luntik{
+    width: 250px;
+    height: 250px;
+    background-color: skyblue; 
+    position: relative;  
+    margin: 17px ;
+    perspective: 1000px;
+}
+.front ,
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1.5s ;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    
+}
+.front{
+    background-color: firebrick;
+}
+.back{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.luntik:hover .front{
+ transform: rotateY(180deg);
+}
+.luntik:hover .back{
+    transform: rotateY(360deg);
+}
+
+
+
+
+
+
+.main2{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.luntik2{
+    width: 250px;
+    height: 250px;
+    background-color: skyblue; 
+    position: relative;  
+    margin: 17px ;
+    perspective: 1000px;
+}
+.front2 ,
+.back2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1.5s ;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    
+}
+.front2{
+    background-color: firebrick;
+}
+.back2{
+    background-color: white;
+    transform: rotateX(180deg);
+}
+.luntik2:hover .front2{
+ transform: rotateX(180deg);
+}
+.luntik2:hover .back2{
+    transform: rotateX(360deg);
+}
